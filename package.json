@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
-    "lint": "eslint . --quiet"
+    "test": "npm run test:lint && npm run test:unit",
+    "lint": "eslint . --quiet",
+    "test:unit": "jest"
   },
   "dependencies": {
     "babel-preset-react-native-stage-0": "^1.0.1",
@@ -27,6 +28,9 @@
     "react-test-renderer": "16.5.0"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "moduleNameMapper": {
+      "^[./a-zA-Z0-9$_-]+\\.(jpg|png|gif|eot|svg|ttf|woff|woff2|mp4|webm)$": "<rootDir>/jest/FileStub.js"
+    }
   }
 }

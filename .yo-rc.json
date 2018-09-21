@@ -2,6 +2,7 @@
   "generator-rn-toolbox": {
     "advanced-base": true,
     "lint": true,
-    "vscode": true
+    "vscode": true,
+    "jest": true
   }
 }
