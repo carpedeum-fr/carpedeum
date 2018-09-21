@@ -2,9 +2,8 @@
 import React, { Component } from 'react';
 import { Text, StyleSheet } from 'react-native';
 
-import Touchable from './Touchable';
-
 import theme from 'theme';
+import Touchable from './Touchable';
 
 export type Props = {
   text?: string,
@@ -25,11 +24,11 @@ class Button extends Component<DefaultProps, Props, void> {
 
   render() {
     const { style, text, textStyle, children, ...rest } = this.props;
-    const content = text
-      ? <Text style={[styles.text, textStyle]}>
-          {text.toUpperCase()}
-        </Text>
-      : children;
+    const content = text ? (
+      <Text style={[styles.text, textStyle]}>{text.toUpperCase()}</Text>
+    ) : (
+      children
+    );
 
     return (
       <Touchable style={[styles.button, style]} {...rest}>

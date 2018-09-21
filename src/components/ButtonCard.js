@@ -16,9 +16,7 @@ class ButtonCard extends PureComponent<void, Props, void> {
     return (
       <Touchable onPress={this.props.onPress} style={styles.card}>
         <View style={styles.contentContainer}>
-          <Text style={styles.text}>
-            {this.props.text}
-          </Text>
+          <Text style={styles.text}>{this.props.text}</Text>
           <Icon name="chevron-right" size={30} />
         </View>
       </Touchable>

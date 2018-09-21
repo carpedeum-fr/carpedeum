@@ -1,5 +1,6 @@
 {
   "generator-rn-toolbox": {
-    "advanced-base": true
+    "advanced-base": true,
+    "lint": true
   }
 }

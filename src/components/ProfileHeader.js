@@ -21,18 +21,21 @@ class ProfileHeader extends Component<void, Props, void> {
           <View style={styles.imageContainer}>
             <Image source={theme.images.defaultUserImage} style={styles.userImage} />
             <View style={styles.imageOverlay}>
-              {user
-                ? <Icon name="pencil" color="white" size={25} />
-                : <ActivityIndicator style={{ alignSelf: 'center' }} color="white" />}
+              {user ? (
+                <Icon name="pencil" color="white" size={25} />
+              ) : (
+                <ActivityIndicator style={{ alignSelf: 'center' }} color="white" />
+              )}
             </View>
           </View>
         </Touchable>
-        {user &&
+        {user && (
           <View>
             <Text style={styles.name}>
               {user.firstName} {user.lastName}
             </Text>
-          </View>}
+          </View>
+        )}
       </View>
     );
   }

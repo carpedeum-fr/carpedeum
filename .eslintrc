@@ -1,0 +1,6 @@
+{
+  "extends": ["universe-error/native"],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}

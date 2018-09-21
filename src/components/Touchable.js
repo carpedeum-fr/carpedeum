@@ -57,18 +57,14 @@ export default class Touchable extends Component<DefaultProps, Props, void> {
           style={null}
           onPress={disabableOnPress}
         >
-          <View style={finalStyle}>
-            {Children.only(this.props.children)}
-          </View>
+          <View style={finalStyle}>{Children.only(this.props.children)}</View>
         </TouchableNativeFeedback>
       );
     }
 
     return (
       <TouchableOpacity {...rest} onPress={disabableOnPress}>
-        <View style={finalStyle}>
-          {this.props.children}
-        </View>
+        <View style={finalStyle}>{this.props.children}</View>
       </TouchableOpacity>
     );
   }

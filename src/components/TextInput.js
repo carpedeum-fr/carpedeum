@@ -71,10 +71,7 @@ class TextInput extends Component<void, Props, void> {
             {...inputProps}
           />
         </View>
-        {errorMessage &&
-          <Text style={styles.error}>
-            {errorMessage}
-          </Text>}
+        {errorMessage && <Text style={styles.error}>{errorMessage}</Text>}
       </View>
     );
   }

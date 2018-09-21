@@ -27,15 +27,9 @@ class Login extends Component<void, Props, void> {
       <Page backgroundImage={theme.images.landing} style={styles.page}>
         <View>
           <TextInput type="email" placeholder={I18n.t('user.form.email')} />
-          <TextInput
-            type="password"
-            placeholder={I18n.t('user.form.password')}
-          />
+          <TextInput type="password" placeholder={I18n.t('user.form.password')} />
 
-          <Button
-            onPress={() => this._goToHomePage()}
-            text={I18n.t('login.login')}
-          />
+          <Button onPress={() => this._goToHomePage()} text={I18n.t('login.login')} />
           <SecondaryFlatButton
             onPress={() => this.props.navigation.navigate('signup')}
             text={I18n.t('login.signup')}

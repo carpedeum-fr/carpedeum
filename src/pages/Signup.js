@@ -30,15 +30,9 @@ class Signup extends Component<void, Props, void> {
           <TextInput type="name" placeholder={I18n.t('user.form.firstname')} />
           <TextInput type="name" placeholder={I18n.t('user.form.lastname')} />
           <TextInput type="email" placeholder={I18n.t('user.form.email')} />
-          <TextInput
-            type="password"
-            placeholder={I18n.t('user.form.password')}
-          />
+          <TextInput type="password" placeholder={I18n.t('user.form.password')} />
 
-          <Button
-            onPress={() => this._goToHomePage()}
-            text={I18n.t('signup.signup')}
-          />
+          <Button onPress={() => this._goToHomePage()} text={I18n.t('signup.signup')} />
         </View>
       </Page>
     );

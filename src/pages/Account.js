@@ -27,10 +27,7 @@ class Account extends Component<void, Props, void> {
     return (
       <Page noPadding noNavBar>
         <ProfileHeader user={{ firstName: 'John', lastName: 'Doe' }} />
-        <ButtonCard
-          onPress={() => this._logout()}
-          text={I18n.t('account.logout')}
-        />
+        <ButtonCard onPress={() => this._logout()} text={I18n.t('account.logout')} />
       </Page>
     );
   }

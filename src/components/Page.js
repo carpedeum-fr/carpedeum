@@ -39,8 +39,9 @@ class Page extends Component<DefaultProps, Props, void> {
 
     return (
       <View style={containerStyle}>
-        {this.props.backgroundImage &&
-          <Image source={this.props.backgroundImage} style={styles.image} resizeMode="cover" />}
+        {this.props.backgroundImage && (
+          <Image source={this.props.backgroundImage} style={styles.image} resizeMode="cover" />
+        )}
         {this.props.children}
       </View>
     );

@@ -16,9 +16,7 @@ class Home extends Component<void, Props, void> {
     return (
       <Page>
         <View style={styles.container}>
-          <Text style={styles.title}>
-            {I18n.t('home.text')}
-          </Text>
+          <Text style={styles.title}>{I18n.t('home.text')}</Text>
         </View>
       </Page>
     );
