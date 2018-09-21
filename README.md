@@ -1,0 +1,3 @@
+# Carpedeum App
+
+Carpedeum is an mobile application to help people in their day-to-day faith, with day texts, thougths, meditations...
