@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "carpedeum/*": "./*"
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
