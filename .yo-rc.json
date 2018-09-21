@@ -3,6 +3,7 @@
     "advanced-base": true,
     "lint": true,
     "vscode": true,
-    "jest": true
+    "jest": true,
+    "travis": true
   }
 }
